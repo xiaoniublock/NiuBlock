@@ -27,5 +27,5 @@ make install
 cd ..
 
 # copy libs and include
-#cp -rf ${INSTALLDIR}/lib/ ${CURDIR}/../../prebuild/pjsip
-#cp -rf ${INSTALLDIR}/include/ ${CURDIR}/../../prebuild/pjsip
+#cp -rf ${INSTALLDIR}/lib/ ${CURDIR}/../../prebuild/libbitcoin
+cp -rf ${INSTALLDIR}/include/ ${CURDIR}/../../prebuild/libbitcoin

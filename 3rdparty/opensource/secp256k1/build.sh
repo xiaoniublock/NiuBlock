@@ -28,4 +28,5 @@ cd ..
 
 # copy libs and include
 cp -rf ${INSTALLDIR}/lib/ ${CURDIR}/../../prebuild/secp256k1
-cp -rf ${INSTALLDIR}/include/ ${CURDIR}/../../prebuild/secp256k1
+#cp -rf ${INSTALLDIR}/include/ ${CURDIR}/../../prebuild/secp256k1
+cp -rf ${DIRNAME}/include/ ${CURDIR}/../../prebuild/secp256k1
