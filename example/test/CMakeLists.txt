@@ -1,13 +1,14 @@
 set(EXECUTABLE_OUTPUT_PATH ${OUTDIR}/example/test)
 
 include_directories(
-	#${TOPDIR}/example/include
+	${TOPDIR}/3rdparty/prebuild/libbitcoin/include/
 )
 
 link_directories(
+    ${TOPDIR}/3rdparty/prebuild/libbitcoin/lib/
 )
 
 
 #################################
-#add_executable(test test.c)
-#target_link_libraries(test example)
+add_executable(TestVersion TestVersion.cpp)
+target_link_libraries(TestVersion bitcoin)
