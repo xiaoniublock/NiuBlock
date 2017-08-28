@@ -1,0 +1,37 @@
+###############################################################################
+#  Copyright (c) 2014-2015 libbitcoin developers (see COPYING).
+#
+#         GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY
+#
+###############################################################################
+
+# Substitutions
+#==============================================================================
+prefix=/home/wm8996/example/git/NiuBlock/3rdparty/opensource/libbitcoin/out
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+# Metadata
+#==============================================================================
+Name: libbitcoin
+Description: Bitcoin Cross-Platform C++ Development Toolkit
+URL: https://github.com/libbitcoin/libbitcoin
+Version: 4.0.0
+
+
+# Variables
+#==============================================================================
+# Dependencies that publish package configuration.
+#------------------------------------------------------------------------------
+Requires:    libsecp256k1 >= 0.0.1
+
+# Include directory and any other required compiler flags.
+#------------------------------------------------------------------------------
+Cflags: -I${includedir}    -I/usr/include 
+
+# Lib directory, lib and any required that do not publish pkg-config.
+#------------------------------------------------------------------------------
+Libs: -L${libdir} -lbitcoin -L/usr/lib64 -lboost_chrono -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_locale -lboost_log -lboost_program_options -lboost_regex -lboost_system -lboost_thread -lpthread -lrt -ldl
+
