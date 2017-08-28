@@ -7,9 +7,9 @@ TOPDIR=${CURDIR}/../../..
 
 
 
-#if [ -d ${DIRNAME} ]; then
-#    rm -rf ${DIRNAME}
-#fi
+if [ -d ${DIRNAME} ]; then
+    rm -rf ${DIRNAME}
+fi
 
 if [ -d ${INSTALLDIR} ]; then
     rm -rf ${INSTALLDIR}
@@ -17,7 +17,7 @@ fi
 
 mkdir ${INSTALLDIR}
 
-#git clone ${DOWNLOADURL}
+git clone ${DOWNLOADURL}
 
 # build lib
 cd ${DIRNAME}
