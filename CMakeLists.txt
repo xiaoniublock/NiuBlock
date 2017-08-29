@@ -16,9 +16,15 @@ set(BUILDDIR ${TOPDIR}/cmake-build/build)
 add_compile_options(-Wall -Wno-unused-local-typedefs -O2 -Os -fomit-frame-pointer)
 add_compile_options("--std=c++11")
 
+#add_definitions(-DHAVE_BYTESWAP_H)
+#add_definitions(-DHAVE_ENDIAN_H)
 
 add_subdirectory(${TOPDIR}/base/big_int/src ${BUILDDIR}/base/big_int/src)
 add_subdirectory(${TOPDIR}/base/big_int/test ${BUILDDIR}/base/big_int/test)
+
+add_subdirectory(${TOPDIR}/base/compat/src ${BUILDDIR}/compat/crypto/src)
+
+#add_subdirectory(${TOPDIR}/base/crypto/src ${BUILDDIR}/base/crypto/src)
 
 add_subdirectory(${TOPDIR}/example/src ${BUILDDIR}/example/src)
 add_subdirectory(${TOPDIR}/example/test ${BUILDDIR}/example/test)
