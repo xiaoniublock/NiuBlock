@@ -17,5 +17,8 @@ add_compile_options(-Wall -Wno-unused-local-typedefs -O2 -Os -fomit-frame-pointe
 add_compile_options("--std=c++11")
 
 
+add_subdirectory(${TOPDIR}/base/big_int/src ${BUILDDIR}/base/big_int/src)
+add_subdirectory(${TOPDIR}/base/big_int/test ${BUILDDIR}/base/big_int/test)
+
 add_subdirectory(${TOPDIR}/example/src ${BUILDDIR}/example/src)
 add_subdirectory(${TOPDIR}/example/test ${BUILDDIR}/example/test)
