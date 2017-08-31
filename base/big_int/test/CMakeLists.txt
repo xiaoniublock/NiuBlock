@@ -13,4 +13,4 @@ link_directories(
 
 #################################
 add_executable(test test.cpp)
-target_link_libraries(test big_int)
+target_link_libraries(test big_int base)
