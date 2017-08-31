@@ -9,6 +9,11 @@ link_directories(
 
 
 #################################
+add_executable(TestFs TestFs.cpp)
+target_link_libraries(TestFs base boost_thread boost_system)
+
+
+#################################
 add_executable(TestUtilTime TestUtilTime.cpp)
 target_link_libraries(TestUtilTime base boost_thread boost_system)
 
