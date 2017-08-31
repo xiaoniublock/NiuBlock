@@ -1,6 +1,7 @@
 set(EXECUTABLE_OUTPUT_PATH ${OUTDIR}/base/big_int/test)
 
 include_directories(
+    ${TOPDIR}/base/base/include
     ${TOPDIR}/base/big_int/include
 )
 

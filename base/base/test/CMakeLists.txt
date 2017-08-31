@@ -1,7 +1,7 @@
 set(EXECUTABLE_OUTPUT_PATH ${OUTDIR}/base/base/test)
 
 include_directories(
-    ${TOPDIR}/base/base/src
+    ${TOPDIR}/base/base/include/base
 )
 
 link_directories(

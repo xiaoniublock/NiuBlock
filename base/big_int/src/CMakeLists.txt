@@ -1,4 +1,5 @@
 include_directories(
+	${TOPDIR}/base/base/include/base
 	${TOPDIR}/base/big_int/include/big_int
 )
 

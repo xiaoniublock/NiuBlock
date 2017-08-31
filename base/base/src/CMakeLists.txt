@@ -1,5 +1,5 @@
 include_directories(
-	#${TOPDIR}/
+	${TOPDIR}/base/base/include/base
 )
 
 file(GLOB_RECURSE HEADERFILES "../include/*")
