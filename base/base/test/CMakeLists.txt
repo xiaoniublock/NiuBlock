@@ -16,3 +16,8 @@ target_link_libraries(TestUtilTime base boost_thread boost_system)
 #################################
 add_executable(TestUtilStrEncodings TestUtilStrEncodings.cpp)
 target_link_libraries(TestUtilStrEncodings base boost_thread boost_system)
+
+
+#################################
+add_executable(TestThreadInterrupt TestThreadInterrupt.cpp)
+target_link_libraries(TestThreadInterrupt base boost_thread boost_system)
