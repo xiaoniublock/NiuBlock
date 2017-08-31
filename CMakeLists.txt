@@ -24,7 +24,7 @@ add_subdirectory(${TOPDIR}/base/big_int/test ${BUILDDIR}/base/big_int/test)
 
 add_subdirectory(${TOPDIR}/base/compat/src ${BUILDDIR}/compat/crypto/src)
 
-#add_subdirectory(${TOPDIR}/base/crypto/src ${BUILDDIR}/base/crypto/src)
+add_subdirectory(${TOPDIR}/base/crypto/src ${BUILDDIR}/base/crypto/src)
 
 add_subdirectory(${TOPDIR}/example/src ${BUILDDIR}/example/src)
 add_subdirectory(${TOPDIR}/example/test ${BUILDDIR}/example/test)
